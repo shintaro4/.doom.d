@@ -44,7 +44,6 @@
 ;; key bindings
 (setq mac-right-option-modifier 'meta)
 (map! "C-t" nil
-      "C-x b" #'counsel-switch-buffer
       "C-s" #'+default/search-buffer)
 
 ; which-key
