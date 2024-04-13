@@ -15,14 +15,12 @@
 ;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
 ;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
 ;;   presentations or streaming.
-;; - `doom-unicode-font' -- for unicode glyphs
+;; - `doom-symbol-font' -- for symbols
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
 ;;
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-;;(setq doom-font (font-spec :family "Fira Code" :size 12 :weight 'semi-light)
-;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 (setq doom-font (font-spec :family "Source Code Pro" :size 10)
       doom-variable-pitch-font (font-spec :family "Source Code Pro" :size 10))
 
@@ -34,14 +32,16 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-rouge)
+(setq doom-theme 'doom-nord-aurora)
+;; :dark 'doom-nord 'doom-nord-aurora 'doom-rouge 'doom-wilmersdorf 'doom-feather-dark
+;; :light 'doom-nord-light 'doom-opera-light 'doom-gruvbox-light 'doom-feather-light 'doom-earl-grey
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type nil)
 
 ;; If you use `org' and don't want your org files in the default location below,
-;; change `org-directory'. It must be set before org loads!
+;; change `org-directory'. It must be set before org loads!n
 (setq org-directory "~/org/")
 
 (setq display-line-numbers-type nil)
@@ -59,7 +59,6 @@
 
 ; which-key
 (setq which-key-idle-delay 0.1)
-
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
