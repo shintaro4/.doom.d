@@ -38,7 +38,7 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type nil)
+(setq display-line-numbers-type t)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!n
@@ -55,6 +55,7 @@
 ;; key bindings
 (setq mac-right-option-modifier 'meta)
 (map! "C-t" nil
+      "C-SPC" nil
       "C-s" #'+default/search-buffer)
 
 ; which-key
