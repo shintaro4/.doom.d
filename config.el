@@ -21,9 +21,9 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "Source Code Pro" :size 10)
-      doom-variable-pitch-font (font-spec :family "Source Code Pro" :size 10))
-
+(setq doom-font (font-spec :family "Source Code Pro" :size 11)
+      doom-variable-pitch-font (font-spec :family "Source Code Pro" :size 11))
+;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
 ;; refresh your font settings. If Emacs still can't find your font, it likely
@@ -55,7 +55,6 @@
 ;; key bindings
 (setq mac-right-option-modifier 'meta)
 (map! "C-t" nil
-      "C-SPC" nil
       "C-s" #'+default/search-buffer)
 
 ; which-key
