@@ -20,7 +20,7 @@
 ;;
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
-;;
+;; 
 (setq doom-font (font-spec :family "Source Code Pro" :size 11)
       doom-variable-pitch-font (font-spec :family "Source Code Pro" :size 11))
 ;;
@@ -35,16 +35,19 @@
 (setq doom-theme 'doom-nord-aurora)
 ;; :dark 'doom-nord 'doom-nord-aurora 'doom-rouge 'doom-wilmersdorf 'doom-feather-dark
 ;; :light 'doom-nord-light 'doom-opera-light 'doom-gruvbox-light 'doom-feather-light 'doom-earl-grey
-
+;; 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
 ;; If you use `org' and don't want your org files in the default location below,
-;; change `org-directory'. It must be set before org loads!n
+;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
 (setq display-line-numbers-type nil)
+
+;; line height
+(setq-default line-spacing 0.2)
 
 (setq confirm-kill-emacs nil
       ;auto-save-default t
